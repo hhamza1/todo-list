@@ -2,6 +2,10 @@ $("ul").on("click","li", function(){
   $(this).toggleClass("checkedOff");
 });
 
+$(".fa-plus").on("click", function(){
+  $("input").fadeToggle();
+})
+
 $("ul").on("click","span",function(e){
   $(this).parent().fadeOut(500, function(){
     $(this).remove();
