@@ -1,0 +1,10 @@
+#container {
+  border: 2px solid grey;
+  max-width: 360px;
+  margin : 0 auto;
+}
+
+.checkedOff{
+  text-decoration: line-through;
+  color: grey;
+}
