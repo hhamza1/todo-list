@@ -1,5 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background: -webkit-linear-gradient(left, #26D0CE, #1A2980);
+  background: -o-linear-gradient(left, #26D0CE, #1A2980);
+  background: linear-gradient(to right, #26D0CE, #1A2980);
 }
 
 #container {
@@ -17,6 +20,29 @@ h1 {
   padding: 10px 20px;
   font-size: 1.5em;
   font-weight: normal;
+}
+
+span {
+  background-color: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.3 linear;
+  opacity: 0;
+}
+
+li:hover span{
+  width: 40px;
+  opacity: 1;
+
+}
+
+.fa-plus {
+  float: right;
+  padding-top: 5px;
 }
 
 .checkedOff{
@@ -54,4 +80,5 @@ input:focus {
   outline: none;
   background-color: #fff;
   color: #2980b9;
+  border : 3px solid #2980b9;
 }
