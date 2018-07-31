@@ -1,5 +1,6 @@
 $("ul").on("click","li", function(){
   $(this).toggleClass("checkedOff");
+  $(this).children(".fa-check").toggleClass("checked");
 });
 
 $(".fa-plus").on("click", function(){
@@ -17,6 +18,6 @@ $("input[type='text']").keypress(function(e){
   if (e.which === 13){
     var todo = $(this).val();
     $(this).val("");
-    $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todo + "</li>")
+    $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todo + "<i class='fa fa-check'></i></li>")
   }
 })
